@@ -21,5 +21,6 @@ typedef struct SDL_Instance
 
 int init_instance(SDL_Instance *);
 void draw_figure(SDL_Instance instance);
+int poll_events(void);
 
 #endif /* _MAZE_H_ */
