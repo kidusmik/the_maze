@@ -1,4 +1,4 @@
-#include "headers/maze.h"
+#include "maze.h"
 
 /**
  * main - main entry of the program
@@ -10,7 +10,7 @@ int main(void)
 	SDL_Instance instance;
 
 	if (init_instance(&instance) != 0)
-		return (1)
+		return (1);
 
 	while (1)
 	{

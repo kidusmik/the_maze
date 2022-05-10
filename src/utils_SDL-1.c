@@ -1,4 +1,4 @@
-#include "headers/maze.h"
+#include "maze.h"
 
 /**
  * init_instance - SDL initialization
@@ -11,11 +11,11 @@ int init_instance(SDL_Instance *instance)
 	if (SDL_Init(SDL_INIT_VIDEO) != 0)
 	{
 		fprintf(stderr, "Unable to initialize SDL: %s\n", SDL_GetError());
-		return (1)
+		return (1);
 	}
 
 	/* Create a new window instance */
-	instance->window = SDL_CreateaWindow("SDL2 \\o/", SDL_WINDOWPOS_CENTERED,
+	instance->window = SDL_CreateWindow("SDL2 \\o/", SDL_WINDOWPOS_CENTERED,
 			SDL_WINDOWPOS_CENTERED, 1260, 720, 0);
 	if (instance->window == NULL)
 	{
